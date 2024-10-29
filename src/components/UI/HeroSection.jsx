@@ -19,7 +19,7 @@ const HeroSection = () => {
           </div>
           <div className="hero_image flex items-center justify-center">
             <img
-              src="/src/assets/world-3.png"
+              src="../../../src/assets/world-3.png"
               alt="World Map"
               className="w-full h-auto "
             />

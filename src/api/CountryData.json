@@ -1,0 +1,107 @@
+[
+    {
+      "id": 1,
+      "name": "Japan",
+      "capital": "Tokyo",
+      "population": 126851745,
+      "interestingFact": "Japan has the highest life expectancy in the world."
+    },
+    {
+      "id": 2,
+      "name": "Canada",
+      "capital": "Ottawa",
+      "population": 37742154,
+      "interestingFact": "Canada has the longest coastline of any country."
+    },
+    {
+      "id": 3,
+      "name": "Australia",
+      "capital": "Canberra",
+      "population": 25499884,
+      "interestingFact": "Australia is home to the world's longest fence."
+    },
+    {
+      "id": 4,
+      "name": "Germany",
+      "capital": "Berlin",
+      "population": 83783942,
+      "interestingFact": "Germany is known for its Oktoberfest and beer culture."
+    },
+    {
+      "id": 5,
+      "name": "Brazil",
+      "capital": "Brasília",
+      "population": 213993437,
+      "interestingFact": "Brazil is the largest country in South America."
+    },
+    {
+      "id": 6,
+      "name": "India",
+      "capital": "New Delhi",
+      "population": 1380004385,
+      "interestingFact": "India is the world's largest democracy."
+    },
+    {
+      "id": 7,
+      "name": "France",
+      "capital": "Paris",
+      "population": 65273511,
+      "interestingFact": "France is famous for its Eiffel Tower and cuisine."
+    },
+    {
+      "id": 8,
+      "name": "Italy",
+      "capital": "Rome",
+      "population": 60244639,
+      "interestingFact": "Italy is home to the Colosseum and the Vatican City."
+    },
+    {
+      "id": 9,
+      "name": "Mexico",
+      "capital": "Mexico City",
+      "population": 126190788,
+      "interestingFact": "Mexico is known for its rich culture and history."
+    },
+    {
+      "id": 10,
+      "name": "South Africa",
+      "capital": "Pretoria",
+      "population": 59308690,
+      "interestingFact": "South Africa has 11 official languages."
+    },
+    {
+      "id": 11,
+      "name": "United Kingdom",
+      "capital": "London",
+      "population": 68207114,
+      "interestingFact": "The UK is known for its monarchy and historical landmarks."
+    },
+    {
+      "id": 12,
+      "name": "Russia",
+      "capital": "Moscow",
+      "population": 145912025,
+      "interestingFact": "Russia is the largest country in the world by area."
+    },
+    {
+      "id": 13,
+      "name": "Argentina",
+      "capital": "Buenos Aires",
+      "population": 45195777,
+      "interestingFact": "Argentina is famous for its tango dance."
+    },
+    {
+      "id": 14,
+      "name": "Spain",
+      "capital": "Madrid",
+      "population": 46754778,
+      "interestingFact": "Spain is known for its vibrant culture and cuisine."
+    },
+    {
+      "id": 15,
+      "name": "China",
+      "capital": "Beijing",
+      "population": 1439323776,
+      "interestingFact": "China has the largest population in the world."
+    }
+]

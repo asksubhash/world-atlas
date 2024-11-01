@@ -1,4 +1,4 @@
-import { NavLink, useParams } from "react-router-dom";
+import { Link, NavLink, useParams } from "react-router-dom";
 import { Loader } from "../components/Loader";
 import { useEffect, useState, useTransition } from "react";
 import { getCountryDetail } from "../api/PostApi";
@@ -43,7 +43,8 @@ const CountryDetail = () => {
   const displayLanguages = languages
     ? Object.values(languages).join(", ")
     : "N/A";
-  const displayBorders = borders ? borders.join(", ") : "None";
+
+  // const displayBorders = borders ? borders.join(", ") : "None";
 
   return (
     <div className="mt-6 max-w-5xl mx-auto px-4 lg:px-8 mb-6">
@@ -90,7 +91,10 @@ const CountryDetail = () => {
             <strong>Languages:</strong> {displayLanguages}
           </p>
           <p className="text-gray-700">
-            <strong>Borders:</strong> {displayBorders}
+            <strong>Borders:</strong>
+            {borders && borders.map((value) => (
+              <Link key={value} to={`/country/${value}`} className="text-white p-1 rounded-md font-medium bg-main mr-2 ml-1 hover:text-main hover:bg-white border-main border transition-all duration-200 ease-in-out">{value}  </Link>
+            ))}
           </p>
 
           {/* Wrapper to push the button to the right */}

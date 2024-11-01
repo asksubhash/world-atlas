@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { useState } from "react";
 
 const SearchFilter = ({ search, setSearch, filter, setFilter,countries,setCountries }) => {
@@ -29,7 +30,7 @@ const SearchFilter = ({ search, setSearch, filter, setFilter,countries,setCountr
           <div className="flex-grow">
             <input
               type="text"
-              value={search}
+              value={search || ""}
               onChange={handleInputChange}
               placeholder="Search"
               className="w-full max-w-md p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8338ec] transition duration-200"
@@ -71,5 +72,15 @@ const SearchFilter = ({ search, setSearch, filter, setFilter,countries,setCountr
     );
   };
   
+
+  // Define the prop types for the component
+  SearchFilter.propTypes = {
+    search: PropTypes.string, // Changed from number to string
+    setSearch: PropTypes.func,
+    filter: PropTypes.string,
+    setFilter: PropTypes.func,
+    countries: PropTypes.array,
+    setCountries: PropTypes.func,
+  };
   export default SearchFilter;
   

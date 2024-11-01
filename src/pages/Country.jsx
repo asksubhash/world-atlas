@@ -12,10 +12,11 @@ const Country = () => {
   useEffect(() => {
     startTransition(async () => {
       const res = await getCountryData();
-      console.log(res);
       setCountries(res.data);
     });
   }, []);
+
+  
   const searchCountry = (country) => {
     if(search){
         return country.name.common.toLowerCase().includes(search.toLowerCase());

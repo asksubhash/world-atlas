@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { NavLink } from "react-router-dom";
 
 const CountryCardCountryPage = ({ country }) => {
-  const { flags, name, population, region, capital } = country;
+  const { flags, name, population, region, capital,cca3 } = country;
 
   // Get the first capital from the array or use the string directly
   const displayCapital = Array.isArray(capital) ? capital[0] : capital;
@@ -29,7 +29,7 @@ const CountryCardCountryPage = ({ country }) => {
         <strong>Capital:</strong> {displayCapital}
       </p>
       
-      <NavLink to={`/country/${name.common}`}>
+      <NavLink to={`/country/${cca3}`}>
         Read More..
       </NavLink>
     </div>
@@ -51,6 +51,7 @@ CountryCardCountryPage.propTypes = {
     ]),
     population: PropTypes.number.isRequired,
     region: PropTypes.string.isRequired,
+    cca3: PropTypes.string.isRequired,
   }).isRequired,
 };
 

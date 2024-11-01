@@ -1,5 +1,6 @@
 import { FaLongArrowAltRight } from "react-icons/fa";
 import worldImage from '../assets/world-3.png';
+import { Link } from "react-router-dom";
 const HeroSection = () => {
   return (
     <>
@@ -13,10 +14,10 @@ const HeroSection = () => {
               search, and filter through countries to find the details you need.
             </p>
 
-            <button className="flex items-center justify-between px-4 py-2 text-white bg-main border border-transparent rounded-md hover:bg-opacity-90 transition-all duration-300 max-w-fit mt-2">
+            <Link to={`/country`} className="flex items-center justify-between px-4 py-2 text-white bg-main border border-transparent rounded-md hover:bg-opacity-90 transition-all duration-300 max-w-fit mt-2">
               <span>Start Exploring</span>
               <FaLongArrowAltRight className="ml-2" />
-            </button>
+            </Link>
           </div>
           <div className="hero_image flex items-center justify-center">
             <img

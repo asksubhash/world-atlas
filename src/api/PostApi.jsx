@@ -11,5 +11,6 @@ export const getCountryData = () => {
   return api.get("/all?files=name,population,region,capital,flags");
 };
 export const getCountryDetail = (name) => {
-    return api.get(`/name/${name}?fullText=true&fields=name,population,region,subregion,capital,tld,currencies,languages,borders,flags`);
+    // return api.get(`/name/${name}`);
+    return api.get(`/alpha/${name}?fullText=true`);
   };

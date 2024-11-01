@@ -1,4 +1,5 @@
 import { FaLongArrowAltRight } from "react-icons/fa";
+import worldImage from '../assets/world-3.png';
 const HeroSection = () => {
   return (
     <>
@@ -19,7 +20,7 @@ const HeroSection = () => {
           </div>
           <div className="hero_image flex items-center justify-center">
             <img
-              src="../../../src/assets/world-3.png"
+              src={worldImage}
               alt="World Map"
               className="w-full h-auto "
             />

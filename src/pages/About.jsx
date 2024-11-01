@@ -1,16 +1,17 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import CountryCard from "../components/CountryCard";
+import countryData from '../api/CountryData.json';
 
 const About = () => {
-  const [countries, setCountries] = useState([]);
-
-  useEffect(() => {
-    // Fetching data from the JSON file
-    fetch("/src/api/CountryData.json") // Adjust the path according to your file structure
-      .then((response) => response.json())
-      .then((data) => setCountries(data))
-      .catch((error) => console.error("Error fetching data:", error));
-  }, []);
+  const [countries] = useState(countryData);
+// console.log(countryData);
+//   useEffect(() => {
+//     // Fetching data from the JSON file
+//     fetch("/src/api/CountryData.json") // Adjust the path according to your file structure
+//       .then((response) => response.json())
+//       .then((data) => setCountries(data))
+//       .catch((error) => console.error("Error fetching data:", error));
+//   }, []);
   return (
     <section className="mt-5">
       <div className=" text-center">
